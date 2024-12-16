@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="2;url=https://www1.affhone.fyi/click?pid=17228&offer_id=712">
+    <title>Redirecting...</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const url = "https://www1.affhone.fyi/click?pid=17228&offer_id=712";
+            const isAndroid = navigator.userAgent.toLowerCase().includes("android");
+            const isIOS = /iPhone|iPad|iPod/.test(navigator.userAgent);
+
+            if (isAndroid) {
+                // Android Intent для открытия в Chrome
+                window.location.href = "intent://www1.affhone.fyi/click?pid=17228&offer_id=712#Intent;scheme=https;package=com.android.chrome;end";
+            } else if (isIOS) {
+                // iOS: попытка открыть Safari
+                window.location.href = url;
+            } else {
+                // Fallback: обычный редирект
+                window.location.href = url;
+            }
+        });
+    </script>
+</head>
+<body>
+    <p>Redirecting...</p>
+</body>
+</html>
